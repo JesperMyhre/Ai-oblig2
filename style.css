@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0; /* Softer background color */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Increased font size */
+}
+
+h2 {
+  font-size: 2rem; /* Increased font size */
+}
+
+p, .commentary {
+  font-size: 1.2rem; /* Increased font size */
+}
+
+main {
+  padding: 2rem;
+  max-width: 70%;
+  margin: 0 auto; /* Center the content */
+  background-color: #f4f4f4; /* Softer background color for content */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  margin-top: 0;
+}
+
+.gallery {
+  margin-bottom: 2rem;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+
+.section-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Reduced min width */
+  gap: 1rem;
+}
+
+.image-container {
+  position: relative;
+  border: 2px solid #ccc;
+  padding: 0.5rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.commentary {
+  padding: 1.5rem; /* Increased padding */
+  background-color: #fff;
+  border: 2px solid #ccc;
+  overflow: hidden; /* Ensure content does not overflow */
+  word-wrap: break-word; /* Break long words */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.documentation {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.documentation .content {
+  max-height: 600px; /* Limit the height for better readability */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.documentation pre {
+  white-space: pre-wrap; /* Wrap long lines */
+  word-wrap: break-word; /* Break long words */
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+}
